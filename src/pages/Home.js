@@ -86,8 +86,8 @@ const Home = () => {
         </div>
       </div>
       <Container>
-        <Card>
-          <Card.Body className="mt-3 mx-3">
+        <Card className="mt-3 mx-3">
+          <Card.Body>
             <Row>
               <Col sm={3}>
                 <Image src={Logo} fluid />
@@ -109,8 +109,8 @@ const Home = () => {
           </Card.Body>
         </Card>
       </Container>
-      <Container className="mt-3">
-        <Card>
+      <Container>
+        <Card className="mt-3 mx-3">
           <Card.Body>
             <h2 className="text-center">WAC Promotional Video</h2>
             <Container>
