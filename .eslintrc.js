@@ -19,5 +19,6 @@ module.exports = {
         extensions: ['.js', '.jsx'],
       },
     ],
+    'no-unused-vars': 'warn',
   },
 };
