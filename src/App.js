@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Keynote from './pages/Keynote';
+import Addresses from './pages/Addresses';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -17,7 +18,7 @@ const App = () => {
         </Route>
 
         <Route path="/addresses">
-          <Keynote />
+          <Addresses />
         </Route>
         <Route path="/plenaries">
           <Keynote />

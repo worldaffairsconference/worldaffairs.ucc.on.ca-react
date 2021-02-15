@@ -20,5 +20,6 @@ module.exports = {
       },
     ],
     'no-unused-vars': 'warn',
+    'react/jsx-wrap-multilines': 'off',
   },
 };
