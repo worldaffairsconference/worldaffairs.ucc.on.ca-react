@@ -5,7 +5,7 @@ import { Nav, Navbar, Button } from 'react-bootstrap';
 const Header = () => {
   return (
     <Navbar bg="light" expand="lg" variant="light" fixed="top">
-      <Navbar.Brand href="/">
+      <Navbar.Brand as={Link} to="/">
         <img
           src="/assets/wac_logo_full.png"
           width="auto"
