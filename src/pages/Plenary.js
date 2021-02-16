@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Card, Row, Col, Image } from 'react-bootstrap';
 
 const Speaker = (props) => {
   const data = props;
-  import(`../img/speakers/${data.img}`).then((image) => {
-    this.setState({ image });
-  });
   return (
     <Row className="pb-2">
       <Col md={4}>
-        <Image src={img} className="mx-auto d-block" fluid rounded />
+        <Image src={data.img} className="mx-auto d-block" fluid rounded />
       </Col>
       <Col md={8}>
         <h2 className="text-center text-md-left">{data.name}</h2>
@@ -33,11 +30,13 @@ const Plenary = (props) => {
           </Card.Body>
         </Card>
         <Card className="mt-4">
-          <Card.Title className="text-center" as="h1">
-            Speakers
-          </Card.Title>
-          <hr />
-          {speakers}
+          <Card.Body>
+            <Card.Title className="text-center" as="h1">
+              Speakers
+            </Card.Title>
+            <hr />
+            {speakers}
+          </Card.Body>
         </Card>
       </Container>
     </>

@@ -5,7 +5,7 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-import PlenaryJSON from './data/plenary.json';
+import PlenaryJSON from './data/plenary';
 import Keynote from './pages/Keynote';
 import Addresses from './pages/Addresses';
 import Plenaries from './pages/Plenaries';
