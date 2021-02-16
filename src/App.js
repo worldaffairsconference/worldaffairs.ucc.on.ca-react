@@ -1,10 +1,6 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from 'react-router-dom';
+import { Switch, Route, Redirect, useLocation } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import PlenaryJSON from './data/plenary';
 import Keynote from './pages/Keynote';
 import Addresses from './pages/Addresses';
@@ -27,50 +23,55 @@ const plenaryRoutes = PlenaryJSON.map((entry) => {
   );
 });
 const App = () => {
+  const location = useLocation();
   return (
-    <Router>
+    <>
       <header>
         <Header />
       </header>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/keynote">
-          <Keynote />
-        </Route>
-        <Route exact path="/addresses">
-          <Addresses />
-        </Route>
-        <Route exact path="/plenaries">
-          <Plenaries />
-        </Route>
-        {plenaryRoutes}
-        <Route exact path="/faq">
-          <Keynote />
-        </Route>
-        <Route exact path="/schedule">
-          <Keynote />
-        </Route>
-        <Route exact path="/contact">
-          <Keynote />
-        </Route>
-        <Route exact path="/team">
-          <Keynote />
-        </Route>
-        <Route exact path="/startups">
-          <Keynote />
-        </Route>
-        <Route exact path="/sprint">
-          <Keynote />
-        </Route>
-        <Route path="/404" component={NotFound} />
-        <Redirect to="/404" />
-      </Switch>
+      <TransitionGroup>
+        <CSSTransition timeout={400} classNames="page" key={location.key}>
+          <Switch location={location}>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/keynote">
+              <Keynote />
+            </Route>
+            <Route exact path="/addresses">
+              <Addresses />
+            </Route>
+            <Route exact path="/plenaries">
+              <Plenaries />
+            </Route>
+            {plenaryRoutes}
+            <Route exact path="/faq">
+              <Keynote />
+            </Route>
+            <Route exact path="/schedule">
+              <Keynote />
+            </Route>
+            <Route exact path="/contact">
+              <Keynote />
+            </Route>
+            <Route exact path="/team">
+              <Keynote />
+            </Route>
+            <Route exact path="/startups">
+              <Keynote />
+            </Route>
+            <Route exact path="/sprint">
+              <Keynote />
+            </Route>
+            <Route path="/404" component={NotFound} />
+            <Redirect to="/404" />
+          </Switch>
+        </CSSTransition>
+      </TransitionGroup>
       <footer>
         <Footer />
       </footer>
-    </Router>
+    </>
   );
 };
 
