@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Container, Row, Col, Card } from 'react-bootstrap';
+import { Image, Row, Col, Card } from 'react-bootstrap';
 
 const KeynoteAddresses = (props) => {
   const data = props;

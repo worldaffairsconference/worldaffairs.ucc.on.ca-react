@@ -28,6 +28,7 @@ const Addresses = () => {
           text="Allen Lau is the CEO and co-founder of Toronto-based Wattpad. Wattpad is a website and app for writers to publish new user-generated stories. Allen leads the company’s efforts to transform how people create and engage with stories across multiple platforms, including the top-rated Wattpad app which boasts over 90 million monthly users. Wattpad has worked with entertainment companies to adapt stories from the platform into blockbuster movies, hit television stories and bestselling books around the world. Since its inception in 2006, Wattpad has raised US$118 million from top VCs in Silicon Valley, New York, Canada and Asia. Allen was previously CEO and co-founder of FeedM8, a mobile advertising company that was acquired by Upstream Systems. In 2001, Allen co-founded Tira Wireless, a venture-backed mobile gaming and technology company. As CTO of Tira, Allen was responsible for its product vision, strategy and R&D. Tira raised over $30 million in funding from US and Canadian VCs. Allen is also the co-founder of Two Small Fish Ventures along with his wife Eva. "
         />
         <KeynoteAddresses
+          title="Closing Address:"
           image={ELau}
           addressName="Eva Lau"
           addressRole="Co-founder and CEO of Two Small Fish"
