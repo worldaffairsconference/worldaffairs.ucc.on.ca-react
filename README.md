@@ -44,3 +44,6 @@ Due to COVID-19, `WAC 2021: Together Towards Tomorrow` was the first ever virtua
 One of the major benifits of React is its dynamic aspect.  
 - To modify the home page quotes, change `quotes.json`
 - To modify routes to plenaries and specific plenary informations, modify `plenary.js` 
+- To modify FAQ, edit `FAQ.js`
+- To modify Schedule or Recording of the conference, modify `schedule.js`
+- To modify staff/ambassadors list and roles, modify `staff.js`
