@@ -26,7 +26,7 @@ const KeynoteAddresses = (props) => {
       <Card.Body>
         <h1 className="text-center">
           {data.title}
-          <i>{data.speaker}</i>
+          <p>{data.speaker}</p>
         </h1>
         <hr />
         <Row className="pb-2">

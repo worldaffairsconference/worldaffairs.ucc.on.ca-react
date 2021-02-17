@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Card, Row, Col, Image } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Speaker = (props) => {
   const data = props;
@@ -23,9 +26,26 @@ const Plenary = (props) => {
   return (
     <>
       <Container className="mt-4">
+        <Card className="mb-2">
+          <Card.Body className="text-center">
+            <Card.Text>
+              <Card.Link
+                href="/plenaries"
+                as={Link}
+                to="/plenaries"
+                className="h4"
+              >
+                <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />
+                View the other plenaries.
+              </Card.Link>
+            </Card.Text>
+          </Card.Body>
+        </Card>
         <Card>
           <Card.Body>
-            <h1 className="text-center">{data.title}</h1>
+            <Card.Title as="h1" className="text-center">
+              {data.title}
+            </Card.Title>
             <Card.Text>{data.text}</Card.Text>
           </Card.Body>
         </Card>

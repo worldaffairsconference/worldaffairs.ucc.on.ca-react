@@ -6,6 +6,12 @@ import Keynote from './pages/Keynote';
 import Addresses from './pages/Addresses';
 import Plenaries from './pages/Plenaries';
 import Plenary from './pages/Plenary';
+import Team from './pages/Team';
+import Schedule from './pages/Schedule';
+import Additional from './pages/Additoinal';
+import SPRINT from './pages/SPRINT';
+import Contact from './pages/Contact';
+import FAQ from './pages/FAQ';
 import NotFound from './pages/404';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -46,22 +52,22 @@ const App = () => {
             </Route>
             {plenaryRoutes}
             <Route exact path="/faq">
-              <Keynote />
+              <FAQ />
             </Route>
             <Route exact path="/schedule">
-              <Keynote />
+              <Schedule />
             </Route>
             <Route exact path="/contact">
-              <Keynote />
+              <Contact />
             </Route>
             <Route exact path="/team">
-              <Keynote />
+              <Team />
             </Route>
             <Route exact path="/startups">
-              <Keynote />
+              <Additional />
             </Route>
             <Route exact path="/sprint">
-              <Keynote />
+              <SPRINT />
             </Route>
             <Route path="/404" component={NotFound} />
             <Redirect to="/404" />

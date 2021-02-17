@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../img/wac_logo.png';
 import ESnowden from '../img/snowden.png';
-import Quotes from '../data/quotes.json';
+import Quotes from '../data/quotes';
 
 const Home = () => {
   const [countDown, setCountDown] = useState('');

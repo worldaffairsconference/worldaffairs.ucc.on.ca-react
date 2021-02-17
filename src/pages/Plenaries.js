@@ -35,19 +35,19 @@ const Plenaries = () => {
             title="Commercial Spaceflight: Humanity's Next Steps"
           />
           <PlenariesCard
-            href="/"
+            href="/plenary/justice"
             image={Justice}
             title="Social Justice: Our History and Future"
           />
         </CardDeck>
         <CardDeck className="mt-2">
           <PlenariesCard
-            href="/"
+            href="/plenary/social"
             image={Media}
             title="Social Media: We are the Product"
           />
           <PlenariesCard
-            href="/"
+            href="/plenary/business"
             image={Business}
             title="Buisness in COVID: Sink or Swim"
           />
