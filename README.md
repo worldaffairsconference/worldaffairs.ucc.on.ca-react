@@ -1,5 +1,5 @@
 # worldaffairs.ucc.on.ca
-🌎Brand new React project for the worldaffairs.ucc.on.ca website!!
+Development Repo for the Brand new React WAC website. Please check main repository for lates updates.
 ## ⌛ It's time to move forward: Embracing Client Side Rendering
 Some limitations to the old WAC website:
 * non component-based design make it difficult to refactor code
